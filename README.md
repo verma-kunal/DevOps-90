@@ -1,7 +1,7 @@
 # DevOps-90
 
 <p align="center">
- <img src="logo.png?raw=true" alt="90DaysOfDevOps Logo" width="50%" height="50%" />
+ <img src="./assets/ig.svg" alt="Logo" width="50%" height="50%" />
 </p>
 
 - This repository is used to document my journey on getting a better foundational knowledge of DevOps. 
