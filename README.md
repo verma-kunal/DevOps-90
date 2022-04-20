@@ -1,7 +1,7 @@
 # DevOps-90
 
 - This repository is used to document my journey on getting a better foundational knowledge of DevOps. 
-- I will be starting this journey on the 18th April 2022 and idea to take this upto `90 days` which just so happens to be `April 18th to June 18th` 
+- I will be starting this journey on the 18th April 2022 and idea to take this upto `90 days` which just so happens to be `April 21st to June 21st` 
 - The reason for documenting the journey is so that others can take something from it and also hopefully enhance the resources. 
 - Goal
     - 90 Days -> 1 hour/day => tackle over 13 areas of DevOps to a foundational knowledge. 
