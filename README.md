@@ -11,7 +11,9 @@
 
 ## Progress 
 
-- [ ] ♾️ 1 > 
+### Getting Ready
+
+- [X] ♾️ 1 > [What is DevOps? - An Introduction](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day01.md)
 
 ### What is and why do we use DevOps
 
