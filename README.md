@@ -6,7 +6,7 @@
 - Goal
     - 90 Days -> 1 hour/day => tackle over 13 areas of DevOps to a foundational knowledge. 
 
-=> Inspired from [Michael Cade's 90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps) 
+=> Inspired from [Michael Cade's 90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps) <br>
 => Roadmap modified using [Saiyam Pathak's Roadmap](https://github.com/verma-kunal/DevOps-90/blob/main/Roadmap/DevOps%20roadmap%202022.pdf)
 
 ## Progress 
