@@ -17,7 +17,7 @@
 
 ### What is and why do we use DevOps
 
-- [ ] ♾️ 2 > 
+- [ ] ♾️ 2 > [Introduction to Containers](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day02.md)
 - [ ] ♾️ 3 > 
 - [ ] ♾️ 4 > 
 - [ ] ♾️ 5 > 
