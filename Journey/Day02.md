@@ -39,7 +39,7 @@
         - Storage area for Docker Images
         - Most popular is **[DockerHub](https://hub.docker.com)**
         
-        ![Screenshot 2022-04-22 at 6.01.22 PM.png](Introduction%20to%20Containers%20-%20Docker%20f8faf997e26a4601be86a1c33133c93f/Screenshot_2022-04-22_at_6.01.22_PM.png)
+        ![](https://i.imgur.com/Mfcsw3X.png)
         
 
 ---
