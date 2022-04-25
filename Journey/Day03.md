@@ -4,6 +4,8 @@
 📌 Resource → Civo DevOps BootCamp: [Session #3](https://youtu.be/ppdBp1GvGpw)
 </aside>
 
+---
+
 - **Continuous Integration** part of the DevOps lifecycle
 
 ---
