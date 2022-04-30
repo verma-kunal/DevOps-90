@@ -45,7 +45,7 @@
 - [ ] 🌐 21 >
 - [ ] 🌐 22 >
 
-### Use Git Effectively
+### Use Git & YAML Effectively
 
 - [ ] 📚 23 > 
 - [ ] 📚 24 > 
