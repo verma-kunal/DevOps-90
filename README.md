@@ -19,7 +19,7 @@
 
 - [X] ♾️ 2 > [Introduction to Containers](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day02.md)
 - [X] ♾️ 3 > [Building & Testing an Application - CI/CD](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day03.md)
-- [ ] ♾️ 4 > 
+- [X] ♾️ 4 > [Release & Deploy - CI/CD + IaC](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day04.md)
 - [ ] ♾️ 5 > 
 - [ ] ♾️ 6 > 
 - [ ] ♾️ 7 >
