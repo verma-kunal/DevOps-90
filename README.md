@@ -21,13 +21,13 @@
 - [X] ♾️ 3 > [Building & Testing an Application - CI/CD](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day03.md)
 - [X] ♾️ 4 > [Release & Deploy - CI/CD + IaC](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day04.md)
 - [X] ♾️ 5 > [SRE - An overview (Operate & Monitoring)](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day05.md)
-- [ ] ♾️ 6 > 
-- [ ] ♾️ 7 >
-- [ ] ♾️ 8 >  
+- [ ] ♾️ 6 > [To be continued . . .](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day06.md)
+- [ ] ♾️ 7 >[To be continued . . .](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day07.md)
+- [ ] ♾️ 8 >  [To be continued . . .](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day08.md)
 
 ### Knowing Linux Basics
 
-- [ ] 🐧 9 > 
+- [X] 🐧 9 > [Understanding Linux - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day09.md)
 - [ ] 🐧 10 > 
 - [ ] 🐧 11 > 
 - [ ] 🐧 12 > 
