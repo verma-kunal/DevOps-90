@@ -28,7 +28,7 @@
 ### Knowing Linux Basics
 
 - [X] 🐧 9 > [Understanding Linux - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day09.md)
-- [ ] 🐧 10 > 
+- [X] 🐧 10 > [A Pool of Essential Commands](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day10.md)
 - [ ] 🐧 11 > 
 - [ ] 🐧 12 > 
 - [ ] 🐧 13 > 
