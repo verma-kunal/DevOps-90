@@ -122,3 +122,181 @@
         - `root` user has the highest number of permissions in linux/unix based systems
 
 ---
+
+- Performing action on multiple files
+    - `-exec` command
+        - does not create a new process it just replaces the bash with the command to be executed
+
+---
+
+- **grep** command
+    - Global regular expression print
+    - Allows to search some text in files
+    - Case sensitive
+        - Versions of grep:
+        
+        ```bash
+        grep -V
+        ```
+        
+        - **Mac** → BSD grep
+        - **Linux** → GNU
+    1. Simple search
+        
+        ```bash
+        grep "Kunal" names.txt
+        
+        **Kunal**
+        ```
+        
+        - If present, it will return the string itself!
+    2. Expanding the whole word
+        
+        ```bash
+        grep -w "Kunal" names.txt
+        
+        **Kunal** Verma
+        ```
+        
+        - Using `-w` (means word-regexp), we searched for the “Kunal” & it returned the whole string associated with that word!
+    3. To ignore the search case-sensitivity
+        
+        ```bash
+        grep -i "kunal" names.txt
+        
+        **Kunal** Verma
+        ```
+        
+    4. Print the line number of the word
+        
+        ```bash
+        grep -n "Kunal" names.txt
+        
+        1:Kunal Verma
+        ```
+        
+    5. Print lines after & before the word
+        
+        ```bash
+        grep -B 5 "Rishab" names.txt
+        
+        Kunal Verma
+        Arpit Aggrawal
+        Parth Kumar
+        Utsav Jhamb
+        Malay Acharya
+        **Rishab** Kesarwani
+        ```
+        
+        - `-B 5` → means print 5 lines before the actual word we are searching
+        
+        ```bash
+        grep -A 5 "Rishab" names.txt
+        ```
+        
+        - `-A 5` → means print 5 lines after the actual word we are searching
+    6. To search the entire directory for a word
+        
+        ```bash
+        grep -win "Kunal" ./*.txt
+        ```
+        
+        - This will check all the `.txt` files in the current directory for the word
+    7. Which file contains a match
+        
+        ```bash
+        grep -wirl "Kunal" .
+        ```
+        
+        - using the `-l` tag here, we found the file that contained “Kunal” in the current directory
+    8. Using `regex` to serch
+        - Regular expression commands
+        - **Come back to it later**
+
+---
+
+- **Useful terminal shortcuts**
+    - `history` command
+        - shows a history of all the commands you ran in that particular session
+        - to directly use a command from history
+        
+        ```bash
+        !<history-number>
+        ```
+        
+    - `Cmd + K` → clear the entire terminal
+    - `;` → to use multiple commands in the same line
+    
+    ```bash
+    git add .;git commit -m "message";git push origin main
+    ```
+    
+
+---
+
+- `ping <URL>` → to check the connectivity status of a website
+- `wget <URL>` → to download any file from the internet
+    - you’ll have to install this using your package managers
+        - `apt install`
+        - `brew install`
+        - `yum install`
+- `top` → process running + CPU usage
+    - `kill <process_id>` → to stop a running process
+- `uname` → prints out your OS name
+    - has many tags associated
+- `zip & unzip`
+- `hostname` → prints the host’s name
+- `vmstat` → checking your virtual memory
+- `id` → to check user & group id’s
+- `getent` → if a particular user exists or not
+- `lsof` → list all the open files
+
+---
+
+### Networking Commands
+
+- `nslookup <URL>`
+    - to checkout the ip address of a domain
+- `cut`
+    - very handy when handling log files
+    - cuts the words/lines accordingly
+    - Example:
+    
+    ```bash
+    cut -c 1-2 company.txt
+    
+    Ci
+    Ar
+    Ch
+    CN
+    Ku
+    ```
+    
+
+---
+
+### Working with Operators
+
+- Combining various commands together
+1. `&` operator
+2. `&&` operator
+    
+    ```bash
+    echo "first" && echo "second"
+    ```
+    
+    - only when the `first` command is completed, then the `second` will run
+3. `;` operator
+4. `||` operator (OR)
+5. `|` operator (pipe)
+6. `!()` operator (NOT)
+7. `>` → over-write
+8. `>>` → append
+    
+    ```bash
+    echo "hey" >> names.txt
+    ```
+    
+9. `{}` → combination operator
+
+---
