@@ -29,7 +29,7 @@
 
 - [X] 🐧 9 > [Understanding Linux - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day09.md)
 - [X] 🐧 10 > [A Pool of Essential Commands](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day10.md)
-- [ ] 🐧 11 > 
+- [X] 🐧 11 > [Shell Scripting - Basics ](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day11.md)
 - [ ] 🐧 12 > 
 - [ ] 🐧 13 > 
 - [ ] 🐧 14 > 
