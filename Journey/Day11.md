@@ -11,7 +11,7 @@
     - program designed to run on a UNIX-based command terminal/shell
 - What is Bash?
     - Dialect of a shell syntax
-    - `BASH` → Born Shell
+    - `BASH` → Bourne Again Shell
     - Its a standard syntax
     - Used as a scripting language
     - `.sh` → Bash script extension
