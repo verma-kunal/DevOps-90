@@ -29,8 +29,8 @@
 
 - [X] 🐧 9 > [Understanding Linux - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day09.md)
 - [X] 🐧 10 > [A Pool of Essential Commands](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day10.md)
-- [X] 🐧 11 > [Shell Scripting - Basics ](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day11.md)
-- [ ] 🐧 12 > 
+- [X] 🐧 11 > [Shell Scripting - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day11.md)
+- [X] 🐧 12 > [SSH - Secure Shell](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day12.md)
 - [ ] 🐧 13 > 
 - [ ] 🐧 14 > 
 - [ ] 🐧 15 > 
