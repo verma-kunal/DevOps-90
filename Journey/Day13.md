@@ -228,13 +228,13 @@ sudo systemctl stop nginx
     1. Editing the file `/etc/hostname` → any hostname that you want
     2. Setting value of hostname in the file `/etc/hosts`
     
-    ![Untitled](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Untitled%202.png)
+    ![](https://i.imgur.com/t8zRp5y.png)
     
     1. Rebooting the server
     
     ⇒ You’ll see that the header of your terminal is changed as well from [localhost](http://localhost) to the hostnam you gave
     
-    ![Screenshot 2022-07-02 at 1.04.15 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.04.15_PM.png)
+    ![](https://i.imgur.com/1QaGTxe.png)
     
 - Installing `Apache2` on Ubuntu 22.04
     - Guides:
@@ -292,7 +292,7 @@ sudo systemctl stop nginx
             
     - **`Apache2`** is running on the browser, on your remote IP address:
         
-        ![Screenshot 2022-07-02 at 1.11.31 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.11.31_PM.png)
+        ![](https://i.imgur.com/G8vbnXJ.png)
         
 
 ---
@@ -307,7 +307,7 @@ sudo systemctl stop nginx
     apt search libapache2-mod
     ```
     
-    ![Screenshot 2022-07-02 at 1.17.13 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.17.13_PM.png)
+    ![](https://i.imgur.com/PVFjsiw.png)
     
 - Installing the package for a module we wanna use:
     
