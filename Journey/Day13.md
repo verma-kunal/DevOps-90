@@ -216,5 +216,177 @@ sudo systemctl stop nginx
                 ![](https://i.imgur.com/9GG4Ly2.png)
                 
         
+---
+
+## Apache
+
+- Using `**Ubuntu 22.04**` on remote server → [Linode](https://www.linode.com/)
+
+---
+
+- Setting up a hostname of your server
+    1. Editing the file `/etc/hostname` → any hostname that you want
+    2. Setting value of hostname in the file `/etc/hosts`
+    
+    ![Untitled](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Untitled%202.png)
+    
+    1. Rebooting the server
+    
+    ⇒ You’ll see that the header of your terminal is changed as well from [localhost](http://localhost) to the hostnam you gave
+    
+    ![Screenshot 2022-07-02 at 1.04.15 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.04.15_PM.png)
+    
+- Installing `Apache2` on Ubuntu 22.04
+    - Guides:
+        - [Digital ocean](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-22-04)
+    - Command:
+        
+        ```bash
+        apt install apache2 apache2-doc apache2-utils
+        ```
+        
+    - To check the status of Apache server:
+        
+        ```bash
+        systemctl status apache2
+        
+        #Output:
+        
+        ● apache2.service - The Apache HTTP Server
+             Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+             Active: active (running) since Sat 2022-07-02 07:36:09 UTC; 25s ago
+               Docs: https://httpd.apache.org/docs/2.4/
+           Main PID: 1353 (apache2)
+              Tasks: 55 (limit: 1033)
+             Memory: 5.0M
+                CPU: 45ms
+             CGroup: /system.slice/apache2.service
+                     ├─1353 /usr/sbin/apache2 -k start
+                     ├─1355 /usr/sbin/apache2 -k start
+                     └─1356 /usr/sbin/apache2 -k start
+        
+        Jul 02 07:36:08 apache-tutorial systemd[1]: Starting The Apache HTTP Server...
+        Jul 02 07:36:09 apache-tutorial apachectl[1352]: AH00558: apache2: Could not reliably determine the s>
+        Jul 02 07:36:09 apache-tutorial systemd[1]: Started The Apache HTTP Server.
+        ```
+        
+    - Types of processes:
+        - To start the server
+            
+            ```bash
+            systemctl start apache2
+            ```
+            
+        - To restart the server
+            
+            ```bash
+            systemctl restart apache2
+            ```
+            
+        - To reload the server
+            - Changes get updated without dropping connections
+            
+            ```bash
+            systemctl reload apache2
+            ```
+            
+    - **`Apache2`** is running on the browser, on your remote IP address:
+        
+        ![Screenshot 2022-07-02 at 1.11.31 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.11.31_PM.png)
+        
+
+---
+
+**Working with Modules in Apache2**
+
+- In order to configure Apache2 for your applications, we use modules
+- For serving a **static site**, we won’t need any extra modules & everything is be default provided and we can just change the default configurations
+- To get a list of the available modules:
+    
+    ```bash
+    apt search libapache2-mod
+    ```
+    
+    ![Screenshot 2022-07-02 at 1.17.13 PM.png](Web%20Servers%20-%20Nginx%20&%20Apache%201bf05598495846348c33be9ffe7484cc/Screenshot_2022-07-02_at_1.17.13_PM.png)
+    
+- Installing the package for a module we wanna use:
+    
+    ```bash
+    apt install <module name>
+    ```
+    
+
+---
+
+- Enable or Disable Modules
+    - Specific way in **Ubuntu**
+    - By default, each module we install, is enabled to be used
+    - To enable a module:
+        
+        ```bash
+        a2enmod <module name>
+        ```
+        
+    - To disable a module:
+        
+        ```bash
+        a2dismod <module name>
+        ```
+        
+- Enable or Disable Sites
+    - Apache is capable of hosting more than 1 website to the server
+    - Feature used → **Name based virtual host**
+    - Ubuntu specific commands
+        - `a2ensite` → enables a site
+        - `a2dissite` → disable a site
+    - Location of default configuration files for site → `/etc/apache2/sites-available`
+        - `000-default.conf`
+        - `default-ssl.conf`
+- Create a new site
+    1. Disable the default site configuration
+        
+        ```bash
+        a2dissite 000-default
+        ```
+        
+    2. Creating a new configuration file:
+        
+        ```bash
+        nano /etc/apache2/sites-available/example.net.conf
+        ```
+        
+    3.  Boilerplate for a new site configuration:
+        
+        ```bash
+        <VirtualHost *:80>
+            ServerAdmin webmaster@serverName
+            ServerName your_domain
+            ServerAlias www.your_domain
+            DocumentRoot /var/www/your_domain
+            ErrorLog ${APACHE_LOG_DIR}/error.log
+            CustomLog ${APACHE_LOG_DIR}/access.log combined
+        </VirtualHost>
+        ```
+        
+        - Enabling a package/module to our config file:
+            
+            ```bash
+            <VirtualHost *:80>
+                ServerAdmin webmaster@serverName
+                ServerName your_domain
+                ServerAlias www.your_domain
+                DocumentRoot /var/www/your_domain
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+            
+            		Options ExecCGI
+                AddHandler cgi-script .py
+            </VirtualHost>
+            ```
+            
+            - In this example, we are enabling `python` module to be used in our server
+        - Creating the necessary directories, according to the path mentioned in `DocumentRoot`, `ErrorLog` & `CustomLog`
+    4. Enabling the websites
+        - Using `a2ensite`
 
 ---
