@@ -10,3 +10,6 @@
 - [Everything about proxy_pass](https://dev.to/danielkun/nginx-everything-about-proxypass-2ona)
 - [Installing Nginx Mainline on Ubuntu 22.04](https://www.linuxcapable.com/how-to-install-nginx-mainline-on-ubuntu-22-04-lts/)
 ---
+
+## Golang
+- [Udemy - Building Modern Web Applications with Go](https://www.udemy.com/course/building-modern-web-applications-with-go/)
