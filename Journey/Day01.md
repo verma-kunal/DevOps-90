@@ -61,7 +61,7 @@
 - DevOps is more of a philosophy
 - You are more of a platform engineer who builds & maintains the platform for other developers to follow the whole software building lifecycle (discussed above)
 
-- DevOps is more of a culture piece rather than an indivisual role!
+- DevOps is more of a culture piece rather than an individual role!
 
 ### How DevOps came into being?
 
