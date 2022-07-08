@@ -32,13 +32,13 @@
 - [X] 🐧 11 > [Shell Scripting - Basics](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day11.md)
 - [X] 🐧 12 > [SSH - Secure Shell](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day12.md)
 - [ ] 🐧 13 > [Webservers - Nginx & Apache](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day13.md)
-- [ ] 🐧 14 > 
-- [ ] 🐧 15 > 
+- [ ] 🐧 14 > [To be continued . . .](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day14.md)
+- [ ] 🐧 15 > [To be continued . . .](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day15.md)
 
 ### Understand Networking
 
-- [ ] 🌐 16 >
-- [ ] 🌐 17 >
+- [X] 🌐 16 > [Internet - History & the Big Picture](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day16.md)
+- [ ] 🌐 17 > [Building Blocks For OSI Model](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day16.md)
 - [ ] 🌐 18 >
 - [ ] 🌐 19 >
 - [ ] 🌐 20 >
