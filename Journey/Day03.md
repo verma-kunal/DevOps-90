@@ -20,8 +20,6 @@
     - **CI**
         - getting your changes merged into the deployable state frequently & continuously
         - Extreme version of this is → commiting after each change made
-        - getting your changes merged into the deployable state frequently & continuously
-        - Extreme version of this is → commiting after each change made
     - **CD**
         - As soon as you merge the code into your main branch or deployable state, it goes straight into the production environment
         - There can be a few stages in b/w like performancing testing, reviews etc. but the main idea is above ☝🏻
