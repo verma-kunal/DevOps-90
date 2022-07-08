@@ -147,3 +147,7 @@
 - [ ] 🗃️ 90 > 
 
 🚧
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=verma-kunal/DevOps-90&type=Timeline)](https://star-history.com/#verma-kunal/DevOps-90&Timeline)
