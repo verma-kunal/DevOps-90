@@ -13,3 +13,4 @@
 
 ## Golang
 - [Udemy - Building Modern Web Applications with Go](https://www.udemy.com/course/building-modern-web-applications-with-go/)
+- [How a Go code gets compiled - By Stream](https://getstream.io/blog/how-a-go-program-compiles-down-to-machine-code/)
