@@ -38,7 +38,7 @@
 ### Understand Networking
 
 - [X] 🌐 16 > [Internet - History & the Big Picture](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day16.md)
-- [ ] 🌐 17 > [Building Blocks For OSI Model](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day16.md)
+- [ ] 🌐 17 > [Building Blocks For OSI Model](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day17.md)
 - [ ] 🌐 18 >
 - [ ] 🌐 19 >
 - [ ] 🌐 20 >
