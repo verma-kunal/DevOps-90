@@ -110,7 +110,7 @@
 - Question
   How does these applications talk to each other & sends requests from the users?
 
-![Screenshot 2022-07-21 at 6.55.15 PM.png](Application%20Layer%20908cb1b88f12400284cfb4dcfe4a1ab5/Screenshot_2022-07-21_at_6.55.15_PM.png)
+![](https://i.imgur.com/pIizpvE.png)
 
 - Processes:
   - Client
@@ -121,7 +121,8 @@
   - Collection of servers is called a **Data Center**
   - Have **static** IP addresses
 - We can use the `ping` command to see how requests are sent to a server:
-  ![Untitled](Application%20Layer%20908cb1b88f12400284cfb4dcfe4a1ab5/Untitled.png)
+  ![](https://i.imgur.com/oPl3D3c.png)
+
   - `icmp_seq` → is the sequence number of that packet
 - `ping time` → measures the round-trip time for messages sent from origin host to destination & then comes back.
 
@@ -134,7 +135,7 @@
 - Scaling is fast
 - Every single system can be termed as a Client or a server
 - Example → **BitTorrent**
-  ![Screenshot 2022-07-21 at 7.13.09 PM.png](Application%20Layer%20908cb1b88f12400284cfb4dcfe4a1ab5/Screenshot_2022-07-21_at_7.13.09_PM.png)
+  ![](https://i.imgur.com/LrWnHLQ.png)
 
 ---
 
