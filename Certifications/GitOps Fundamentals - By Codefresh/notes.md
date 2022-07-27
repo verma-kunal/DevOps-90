@@ -1,9 +1,6 @@
 # Codefresh - GitOps Fundamentals
 
 Link: https://codefresh.learnworlds.com/course/gitops-with-argo
-Number: 4
-Status: to-do
-Succes?: No
 
 ### What is GitOps?
 
