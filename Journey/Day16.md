@@ -49,9 +49,8 @@
 - Co-invented by **Tim Berners-Lee**
 - To be able to share as many documents as possible & all of them connected through a link
 - WWW basically stores all these documents (being sent over through the internet) & allows to access them through a **URL (Uniform Resource Locator)**
-- World’s first website →
 
-[](http://info.cern.ch/hypertext/WWW/TheProject.html)
+- [World’s first website →](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
 - These pages are published by **Web-servers**
 - Now, the search feature was not available here & we could not scale the applications due to this!
