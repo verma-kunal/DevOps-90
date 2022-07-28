@@ -19,7 +19,12 @@ func HomePage(w http.ResponseWriter, req *http.Request) {
 // DividePage is the Divide Page Handler:
 func DividePage(w http.ResponseWriter, req *http.Request) {
 	// calling a function which does division:
-	divide, err := divdeValues()
+	divide, err := divdeValues(100.0, 0.0)
+	if err != nil {
+		fmt.Fprintf(w, "Cannot divide by zero!")
+		return // as we want to stop executing this function as soon as the error occurs
+	}
+	fmt.Fprintf(w, fmt.Sprintf("%f divided by %f is %f", 100.0, 0.0, divide))
 }
 
 func divdeValues(x, y float32) (float32, error) {
