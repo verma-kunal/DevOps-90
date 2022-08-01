@@ -9,17 +9,19 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <title>Document</title>
+        {{block "css" .}}
+
+        {{end}}
     </head>
     <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>This is the Home Page</h1>
-                <p>This is some text</p>
+    {{block "content" .}}
 
-            </div>
-        </div>
-    </div>
+    {{end}}
+
+    {{block "js" .}}
+
+    {{end}}
+
     </body>
     </html>
 {{end}}
