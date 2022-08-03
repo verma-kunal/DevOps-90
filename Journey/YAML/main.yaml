@@ -1,0 +1,13 @@
+microservice:
+  app: user-authentication
+  port: 8080
+  version: 1.0
+
+microservices:
+  - app: "1"
+    port: 9000
+    version: 1.1
+  - app: "2"
+    port: 9001
+    version: 1.2
+    deployed: true

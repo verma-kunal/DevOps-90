@@ -263,6 +263,76 @@ To know about the status of a particular request (whether it was sent, failed et
 
 ---
 
+### How Email works?
+
+- Application Layer protocol used here is **SMTP (Simple Mail Transfer Protocol)** → to send emails
+    - To receive emails, we an use **POP3** protocol
+- Transport layer protocol used here is TCP
+    - Because we don’t want any data to be lost (as it gets in UDP)
+
+![](https://i.imgur.com/PkkS4Uf.png)
+
+- A command to find more info about the SMTP serves for various domains - `nslookup`
+    
+    ![](https://i.imgur.com/ER0z1Yn.png)
+    
+    - Here `-type=mx` means “Mail Exchange” i.e. SMTP servers
+- **Downloading Emails**
+    - POP → Post Office Protocol (PORT 110)
+    - POP connects with the client-server & then transact all the emails.
+
+---
+
+### Domain Name System (DNS)
+
+- Question
+    
+    How does the internet finds a particular server for the domain name & the associated **IP address** ?
+    
+- Domain names are mapped to IP addresses
+- When we write `google.com`, that uses DNS to find the IP address of Google’s server
+- `HTTP` → converts the URL we type into an IP address (using DNS) to find the desired server
+- DNS → Directory or database that has all the IP addresses of servers
+
+---
+
+- **Classes of Domains:**
+    
+    ![](https://i.imgur.com/kfJgTcd.png)
+    
+    - Instead of storing data in at a single place, there are multiple places for these 3 categories
+        1. **Root DNS Servers**
+            - For top-level domains
+            - 1st point to contact when you search a domain
+            - Examples: `.io`, `.org`, `.com` etc.
+            - Who is maintaining the root DNS servers
+                
+                [https://root-servers.org](https://root-servers.org/)
+                
+            - Managed by **ICAN** (Internet Corporation for Assigned Names & Numbers)
+
+---
+
+- **Lifecycle of connecting to a server via a domain name:**
+    
+    ![](https://i.imgur.com/BANRI8L.png)
+    
+
+---
+
+- Some organisation have their own top-level domain names.
+    - Example: Google has `.com`
+- **FACT** → You cannot buy your own domain name, can only rent it
+
+---
+
+- `dig` command (Domain Info Groper) is used for retrieving information about DNS name servers
+    
+    ![](https://i.imgur.com/gU0jomK.png)
+    
+
+---
+
 ### Resources Used
 
 - [Computer Networking Course](https://youtu.be/IPvYjXCsTg8)
