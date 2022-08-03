@@ -20,28 +20,56 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 	}
 }
 
-// Creating a map, that can store the values from "template.ParseFiles" function:
-var templateCache = make(map[string]*template.Template)
+// Method-1 - Increasing efficiency of parsing the templates:
 
-// RenderTemplateTest - taking args as the response writer & our template name as a string
+// Declaring a map:
+var tempCache = make(map[string]*template.Template)
+
 func RenderTemplateTest(w http.ResponseWriter, temp string) {
 	var tmpl *template.Template
 	var err error
 
-	// check to see if we already have the template in our cache (checking the templateCache map - whether the template exists in there or not)
-	_, inMap := templateCache[temp]
-	// inMap stores true/false for if the template is there in the map or not
+	// check if the template is already present in our cache (tempCache -> map)
+	// searching the map for the key "temp":
+	_, inMap := tempCache[temp]
 
 	if !inMap {
-		// need to create the template
-
+		// => template not present. Therefore, need to create a one
+		log.Println("Creating template & adding to cache")
+		err = createTemplateCache(temp)
+		if err != nil {
+			log.Println(err)
+		}
 	} else {
-		// the template is present in the cache
-		log.Println("Using cached template")
+		// we have the template in the cache
+		log.Println("using cached template!")
 	}
 
-	tmpl = templateCache[temp]
+	// once we have the value of the template -> storing that in our "tmpl" variable:
+	tmpl = tempCache[temp]
 
-	// executing the template:
+	// Executing the template:
 	err = tmpl.Execute(w, nil)
+	if err != nil {
+		log.Println(err)
+	}
+}
+
+func createTemplateCache(tempName string) error {
+	// step-1
+	templates := []string{
+		fmt.Sprintf("./templates/%s", tempName),
+		"./templates/base.layout.tmpl",
+	}
+
+	// step-2 -> parsing the template:
+	tmpl, err := template.ParseFiles(templates...)
+	if err != nil {
+		return err
+	}
+
+	// otherwise: add the template to the cache (map)
+	tempCache[tempName] = tmpl
+
+	return nil
 }
