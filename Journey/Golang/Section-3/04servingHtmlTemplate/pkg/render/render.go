@@ -21,7 +21,6 @@ func RenderTemplate(w http.ResponseWriter, tmpl string) {
 }
 
 // Method-1 - Increasing efficiency of parsing the templates:
-
 // Declaring a map:
 var tempCache = make(map[string]*template.Template)
 
@@ -72,4 +71,16 @@ func createTemplateCache(tempName string) error {
 	tempCache[tempName] = tmpl
 
 	return nil
+}
+
+// RenderTemplateTest2 -> (Method-2) - Increasing efficiency of parsing the templates (a complex method):
+func RenderTemplateTest2(w http.ResponseWriter, tmpl string) {
+	parsedTemplate, _ := template.ParseFiles("./templates/"+tmpl, "./templates/base.layout.tmpl")
+	err := parsedTemplate.Execute(w, nil)
+
+	// checking for error
+	if err != nil {
+		fmt.Println("error parsing template:", err)
+		return
+	}
 }
