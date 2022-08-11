@@ -1,10 +1,6 @@
 # Understanding KubeSlice
 
----
-
-- Docs
-    
-    [](https://kubeslice.io/documentation/open-source/0.2.0)
+- Docs: https://kubeslice.io/documentation/open-source/0.2.0
     
 - What is KubeSlice?
     - A tool that combines **network**, **application**, **Kubernetes**, and **deployment services** in a framework to accelerate application deployment in a **multi-cluster**, **multi-tenant** environment
