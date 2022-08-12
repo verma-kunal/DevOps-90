@@ -111,8 +111,6 @@ or [Argo CD autopilot](https://argocd-autopilot.readthedocs.io/en/stable/) whic
     
     ![](https://codimd.s3.shivering-isles.com/demo/uploads/964b27ee-a7ce-4160-af45-94b9e9144949.png)
 
-    
-
 ---
 
 **Log in the ArgoCD UI**
@@ -129,5 +127,128 @@ or [Argo CD autopilot](https://argocd-autopilot.readthedocs.io/en/stable/) whic
     ```bash
     cat admin-pass.txt
     ```
+    
+---
+
+### Creating an ArgoCD application
+
+- There are 3 ways an application can be created in ArgoCD:
+    1. Using the UI
+    2. CLI
+    3. Writing custom Kuberntes manifests, which can be passed to `kubectl`, to create resources
+
+---
+
+- **Using the UI**
+    - Using the following info:
+        - application name : `demo`
+        - project: `default`
+        - repository URL: [https://github.com/verma-kunal/DevOps-90](https://github.com/verma-kunal/DevOps-90/tree/main/Certifications/GitOps-Fundamentals-By-Codefresh/Hands-On-Files)
+        - path: `./Certifications/GitOps-Fundamentals-By-Codefresh/Hands-On-Files`
+        - Cluster: [https://kubernetes.default.svc](https://kubernetes.default.svc/) (this is the same cluster where ArgoCD is installed)
+        - Namespace: `default`
+    - Hit the `Create` button
+    - We’ll se an initial state of the application as below:
+        
+        ![](https://i.imgur.com/Bz0o80C.png)
+        
+        - Here, `OutOfSync` state means that:
+            1. the cluster is empty
+                - You can check this by doing:
+                    
+                    ```bash
+                    kubectl get deployments
+                    ```
+                    
+            2. The Git repository has an application
+                - Therefore, the Git & cluster state are different
+    - **Syncing in ArgoCD**
+        - This means that, we want to match the state described in Git to that of whats in the cluster.
+        - Using the UI, we can directly hit the `Sync` button & that would match the Git state with the cluster state
+        - Our app should now be deployed 🎉
+            
+            ![](https://i.imgur.com/W1h7TGw.png)
+            
+            - To check we can do:
+                
+                ```bash
+                kubectl get deployments
+                
+                # Output:
+                NAME                READY   UP-TO-DATE   AVAILABLE   AGE
+                simple-deployment   1/1     1            1           61s
+                ```
+                
+    
+- **Using the CLI**
+    - Some handy commands:
+        1. The list of all the apps & their info
+        
+        ```bash
+        argocd app list
+        ```
+        
+        1. Get info of a specific app 
+            
+            Example: `demo` app
+            
+            ```bash
+            argocd app get demo
+            
+            # Output:
+            Name:               demo
+            Project:            default
+            Server:             https://kubernetes.default.svc
+            Namespace:          default
+            URL:                https://localhost:30443/applications/demo
+            Repo:               https://github.com/verma-kunal/DevOps-90
+            Target:             HEAD
+            Path:               ./Certifications/GitOps-Fundamentals-By-Codefresh/Hands-On-Files
+            SyncWindow:         Sync Allowed
+            Sync Policy:        <none>
+            Sync Status:        Synced to HEAD (1047b67)
+            Health Status:      Healthy
+            
+            GROUP  KIND        NAMESPACE  NAME               STATUS  HEALTH   HOOK  MESSAGE
+                   Service     default    simple-service     Synced  Healthy        service/simple-service created
+            apps   Deployment  default    simple-deployment  Synced  Healthy        deployment.apps/simple-deployment created
+            ```
+            
+        2. Deleting a specific app (`demo`)
+            
+            ```bash
+            argocd app delete demo
+            ```
+            
+    
+    ---
+    
+    **Deploying an app using the CLI**
+    
+    - Creating the app: (`demo-kunal`)
+        
+        ```bash
+        argocd app create demo-kunal \
+        > --project default \
+        > --repo https://github.com/verma-kunal/DevOps-90 \
+        > --path "./Certifications/GitOps-Fundamentals-By-Codefresh/Hands-On-Files" \
+        > --dest-namespace default \
+        > --dest-server https://kubernetes.default.svc
+        
+        # Output:
+        
+        application 'demo-kunal' created
+        ```
+        
+    - Syncing the app:
+        
+        ```bash
+        argocd app sync demo-kunal
+        ```
+        
+- **Points to Remember**
+    - `Argo CD` is a standalone project. It works great with the other Argo projects, but it does not depend on them.
+    - How does ArgoCD interact with clusters?
+        - You can have any combination of clusters and ArgoCD instances. ArgoCD can deploy applications on the cluster it is installed on, or other external clusters that are authenticated correctly
 
 ---
