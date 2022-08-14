@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d364f5c6-30fc-464d-b931-d5def70911d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/crud-movies-api/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud-movies-api/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crud-movies-api/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud-movies-api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/crud-movies-api/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
