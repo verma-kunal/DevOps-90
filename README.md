@@ -39,9 +39,9 @@
 
 - [X] 🌐 16 > [Internet - History & the Big Picture](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day16.md)
 - [X] 🌐 17 > [Building Blocks For OSI Model](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day17.md)
-- [ ] 🌐 18 > [The OSI Model](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/Day18.md)
-- [ ] 🌐 19 >
-- [ ] 🌐 20 >
+- [X] 🌐 18 > [The OSI Model -  Introduction](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Introduction.md)
+- [X] 🌐 19 > [The OSI Model - Application Layer](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Application-layer.md)
+- [X] 🌐 20 > [The OSI Model - Transport Layer](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Transport-layer.md)
 - [ ] 🌐 21 >
 - [ ] 🌐 22 >
 
