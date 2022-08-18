@@ -42,7 +42,7 @@
 - [X] 🌐 18 > [The OSI Model -  Introduction](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Introduction.md)
 - [X] 🌐 19 > [The OSI Model - Application Layer](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Application-layer.md)
 - [X] 🌐 20 > [The OSI Model - Transport Layer](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Transport-layer.md)
-- [ ] 🌐 21 >
+- [X] 🌐 21 > [The OSI Model - Network Layer](https://github.com/verma-kunal/DevOps-90/blob/main/Journey/OSI-Model/Network-layer.md)
 - [ ] 🌐 22 >
 
 ### Use Git & YAML Effectively
