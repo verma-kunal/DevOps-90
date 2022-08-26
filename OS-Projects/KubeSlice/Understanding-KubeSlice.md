@@ -37,5 +37,13 @@
     - Why then use KubeSlice? (A simple answer)
         - It automates things
         - It tackles the problem that Kubernetes have of achieving multi-tenancy on a multi-cluster architecture.
+- How does Kubeslice makes things easy (in cluster communitcation)?
+    - KubeSlice creates a flat **overlay network** to connect the clusters
+    - Overlay Network → an application slice that provides a slice of connectivity between pods of an application running in multiple clusters
+        - Can also be referred to as app-specific VPC (Virtual Private Cloud) across clusters
+    - Pods can connect to this **slice overlay network** & comunicate with each other across clusters!
+    - This connection is secured by creating encrypted VPN tunnels, for inter-cluster traffic
+- Use-Case (Service Discovery & Reachability)
+    - Enables Kubernetes service (running in a cluster) to be exported through the slice overlay network & be discovered and reached by pods running in other clusters.
 
 ---
