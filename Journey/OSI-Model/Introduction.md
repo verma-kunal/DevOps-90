@@ -51,9 +51,10 @@
             - Helps in re-assembling the segments in the correct order
     2. Flow Control
        - Controls the amount of data that is being transferred
-       - Error control is managed here
-       - Adds a `checkSum` to every data segment
-         - Quality of data check
+    3. Error Control
+       - Some data will be lost / corrupted
+       - It adds checkSum to every data segment
+          - Quality of data check
 - Network Layer
   - Mainly works on the transmission of the segments from 1 computer to another, that is located in different networks
   - **Router** lives over here
